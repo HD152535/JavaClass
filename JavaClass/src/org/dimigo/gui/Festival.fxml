@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.FestivalController">
+   <children>
+      <Button layoutX="104.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleRegAction" text="등록" />
+      <Button layoutX="172.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleCloseAction" text="닫기" />
+      <CheckBox fx:id="ckbMusic" layoutX="87.0" layoutY="286.0" mnemonicParsing="false" text="노래" />
+      <CheckBox fx:id="ckbBand" layoutX="239.0" layoutY="286.0" mnemonicParsing="false" text="밴드" />
+      <CheckBox fx:id="ckbDance" layoutX="175.0" layoutY="286.0" mnemonicParsing="false" text="춤" />
+      <ComboBox fx:id="cbClass" layoutX="87.0" layoutY="174.0" prefWidth="150.0" />
+      <TextField fx:id="tfName" layoutX="86.0" layoutY="227.0" />
+      <Label layoutX="40.0" layoutY="24.0" text="&lt; 축제참가자 등록 &gt;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="81.0" text="접수일자" />
+      <Label layoutX="16.0" layoutY="129.0" text="학년" />
+      <Label layoutX="16.0" layoutY="179.0" text="반" />
+      <Label layoutX="16.0" layoutY="232.0" text="이름" />
+      <Label layoutX="16.0" layoutY="287.0" text="참가분야" />
+      <DatePicker fx:id="dpRegDate" layoutX="87.0" layoutY="76.0" />
+      <RadioButton fx:id="rbFirst" layoutX="87.0" layoutY="129.0" mnemonicParsing="false" text="1학년">
+         <toggleGroup>
+            <ToggleGroup fx:id="year" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbSecond" layoutX="160.0" layoutY="129.0" mnemonicParsing="false" text="2학년" toggleGroup="$year" />
+      <RadioButton fx:id="rbThird" layoutX="239.0" layoutY="129.0" mnemonicParsing="false" text="3학년" toggleGroup="$year" />
+   </children>
+</AnchorPane>
